@@ -37,3 +37,5 @@ WebUI.verifyElementText(findTestObject('Object Repository/LoginInvalidCredential
 
 WebUI.closeBrowser()
 
+WebUI.takeScreenshotAsCheckpoint('Login with invalid credentials')
+
