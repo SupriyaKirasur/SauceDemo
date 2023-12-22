@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_2020 Sauce Labs. All Rights Reserved. T_5b767f</name>
+   <tag></tag>
+   <elementGuidId>27d43bde-db96-4619-bfc0-c702ceef063b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//footer/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.footer_copy</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>1a7d83ef-a1c9-409b-b344-e5fce7b93849</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>footer_copy</value>
+      <webElementGuid>c15c5a11-1974-4416-9739-45005a488d30</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>© 2020 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy</value>
+      <webElementGuid>a10ab605-201f-470c-bcbc-2ba285fe497e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;main-body&quot;]/footer[@class=&quot;footer&quot;]/div[@class=&quot;footer_copy&quot;]</value>
+      <webElementGuid>4713720b-a572-4d51-91cf-2bb23a49fb0f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//footer/div</value>
+      <webElementGuid>5adeac15-64d9-4579-b21b-847725e08cfc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = '© 2020 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy' or . = '© 2020 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy')]</value>
+      <webElementGuid>138c078d-30be-4bf3-9f4e-8fb4acd921c7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
