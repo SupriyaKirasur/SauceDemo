@@ -35,5 +35,3 @@ WebUI.click(findTestObject('Object Repository/LoginPage/Page_Swag Labs/inputlogi
 
 WebUI.verifyElementText(findTestObject('Object Repository/LoginPage/Page_Swag Labs/div_Products'), 'Products')
 
-WebUI.takeScreenshotAsCheckpoint('Login Successful')
-
