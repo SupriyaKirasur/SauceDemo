@@ -25,5 +25,5 @@ WebUI.click(findTestObject('Object Repository/Logout/Page_Swag Labs/a_Logout'))
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Logout/Page_Swag Labs/inputlogin-button'), 0)
 
-WebUI.closeBrowser()
+WebUI.takeScreenshotAsCheckpoint('Logout is successful')
 

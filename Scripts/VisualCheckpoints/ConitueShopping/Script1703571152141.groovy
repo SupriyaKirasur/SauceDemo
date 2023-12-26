@@ -27,5 +27,5 @@ WebUI.click(findTestObject('Object Repository/ContinueShopping/Page_Swag Labs/a_
 
 WebUI.verifyElementText(findTestObject('Object Repository/ContinueShopping/Page_Swag Labs/div_Products'), 'Products')
 
-WebUI.closeBrowser()
+WebUI.takeScreenshotAsCheckpoint('continueShoppingSuccessful')
 

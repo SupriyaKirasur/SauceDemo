@@ -36,5 +36,5 @@ WebUI.rightClick(findTestObject('Object Repository/FooterImage/Page_Swag Labs/li
 
 WebUI.click(findTestObject('Object Repository/FooterImage/Page_Swag Labs/div_Sauce Labs OnesieRib snap infant onesie_8fcfdc'))
 
-WebUI.closeBrowser()
+WebUI.takeScreenshotAsCheckpoint('FooterImagePresent')
 

@@ -24,5 +24,5 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/SOrtByPriceLowtoHigh
 
 WebUI.verifyElementText(findTestObject('Object Repository/SOrtByPriceLowtoHigh/Page_Swag Labs/div_7.99'), '$7.99')
 
-WebUI.closeBrowser()
+WebUI.takeScreenshotAsCheckpoint('ProductSorting-Lowto High')
 

@@ -33,5 +33,5 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/ProductPage-removei
 
 WebUI.click(findTestObject('Object Repository/ProductPage-removeitem/Page_Swag Labs/button_REMOVE'))
 
-WebUI.closeBrowser()
+WebUI.takeScreenshotAsCheckpoint('RemoveItemSuccessful')
 

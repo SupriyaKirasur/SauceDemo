@@ -30,5 +30,5 @@ WebUI.click(findTestObject('Object Repository/NoPassword/Page_Swag Labs/inputlog
 WebUI.verifyElementText(findTestObject('Object Repository/NoPassword/Page_Swag Labs/h3_Epic sadface Password is required'), 
     'Epic sadface: Password is required')
 
-WebUI.closeBrowser()
+WebUI.takeScreenshotAsCheckpoint('login with no password')
 

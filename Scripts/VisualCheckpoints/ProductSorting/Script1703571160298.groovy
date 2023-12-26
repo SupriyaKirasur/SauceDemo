@@ -33,5 +33,5 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/ProductSorting/Page_
 
 WebUI.verifyElementText(findTestObject('Object Repository/ProductSorting/Page_Swag Labs/div_Sauce Labs Backpack'), 'Sauce Labs Backpack')
 
-WebUI.closeBrowser()
+WebUI.takeScreenshotAsCheckpoint('ProductSortingSuccessful')
 

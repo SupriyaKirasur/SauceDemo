@@ -35,5 +35,5 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/LoginInvalidCreden
 WebUI.verifyElementText(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/h3_Epic sadface Username and password do no_0e8909'), 
     'Epic sadface: Username and password do not match any user in this service')
 
-WebUI.closeBrowser()
+WebUI.takeScreenshotAsCheckpoint('InvalidCredentialsLogin')
 
