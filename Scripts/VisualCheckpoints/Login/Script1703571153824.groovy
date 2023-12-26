@@ -19,6 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
+WebUI.maximizeWindow()
+
 WebUI.navigateToUrl('https://www.saucedemo.com/v1/')
 
 WebUI.verifyElementText(findTestObject('Object Repository/LoginPage/Page_Swag Labs/div_login_logo'), '')
