@@ -17,23 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('https://www.saucedemo.com/v1/')
+WebUI.click(findTestObject('Object Repository/Logout/Page_Swag Labs/button_Open Menu'))
 
-WebUI.setText(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/input_user-name'), 'locked_out_user')
+WebUI.click(findTestObject('Object Repository/Logout/Page_Swag Labs/a_Logout'))
 
-WebUI.click(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/form'))
-
-WebUI.setEncryptedText(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/input_password'), 'p4y+y39Ir5MSxNs1t5lTZQ==')
-
-WebUI.click(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/inputlogin-button'))
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/h3_Epic sadface Username and password do no_0e8909'), 
-    0)
-
-WebUI.verifyElementText(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/h3_Epic sadface Username and password do no_0e8909'), 
-    'Epic sadface: Username and password do not match any user in this service')
+WebUI.verifyElementPresent(findTestObject('Object Repository/Logout/Page_Swag Labs/inputlogin-button'), 0)
 
 WebUI.closeBrowser()
 

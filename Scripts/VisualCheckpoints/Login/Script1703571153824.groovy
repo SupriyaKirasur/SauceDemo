@@ -21,19 +21,19 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.saucedemo.com/v1/')
 
-WebUI.setText(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/input_user-name'), 'locked_out_user')
+WebUI.verifyElementText(findTestObject('Object Repository/LoginPage/Page_Swag Labs/div_login_logo'), '')
 
-WebUI.click(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/form'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/LoginPage/Page_Swag Labs/img_bot_column'), 0)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/input_password'), 'p4y+y39Ir5MSxNs1t5lTZQ==')
+WebUI.verifyElementVisible(findTestObject('Object Repository/LoginPage/Page_Swag Labs/inputlogin-button'))
 
-WebUI.click(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/inputlogin-button'))
+WebUI.setText(findTestObject('Object Repository/LoginPage/Page_Swag Labs/input_user-name'), 'standard_user')
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/h3_Epic sadface Username and password do no_0e8909'), 
-    0)
+WebUI.setEncryptedText(findTestObject('Object Repository/LoginPage/Page_Swag Labs/input_password'), 'qcu24s4901FyWDTwXGr6XA==')
 
-WebUI.verifyElementText(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/h3_Epic sadface Username and password do no_0e8909'), 
-    'Epic sadface: Username and password do not match any user in this service')
+WebUI.click(findTestObject('Object Repository/LoginPage/Page_Swag Labs/inputlogin-button'))
 
-WebUI.closeBrowser()
+WebUI.verifyElementText(findTestObject('Object Repository/LoginPage/Page_Swag Labs/div_Products'), 'Products')
+
+WebUI.takeScreenshotAsCheckpoint('Login Successful', FailureHandling.STOP_ON_FAILURE)
 

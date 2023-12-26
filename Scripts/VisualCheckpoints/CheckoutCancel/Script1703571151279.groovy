@@ -17,23 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('AddToCart'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('https://www.saucedemo.com/v1/')
+WebUI.click(findTestObject('Object Repository/CheckoutCancel/Page_Swag Labs/path'))
 
-WebUI.setText(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/input_user-name'), 'locked_out_user')
+WebUI.click(findTestObject('Object Repository/CheckoutCancel/Page_Swag Labs/a_CHECKOUT'))
 
-WebUI.click(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/form'))
+WebUI.click(findTestObject('Object Repository/CheckoutCancel/Page_Swag Labs/a_CANCEL'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/input_password'), 'p4y+y39Ir5MSxNs1t5lTZQ==')
+WebUI.verifyElementText(findTestObject('Object Repository/CheckoutCancel/Page_Swag Labs/div_Your Cart'), 'Your Cart')
 
-WebUI.click(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/inputlogin-button'))
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/h3_Epic sadface Username and password do no_0e8909'), 
-    0)
-
-WebUI.verifyElementText(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/h3_Epic sadface Username and password do no_0e8909'), 
-    'Epic sadface: Username and password do not match any user in this service')
-
-WebUI.closeBrowser()
+WebUI.takeScreenshotAsCheckpoint('CheckoutCancelSuccessful')
 

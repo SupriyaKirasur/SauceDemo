@@ -21,19 +21,20 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.saucedemo.com/v1/')
 
-WebUI.setText(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/input_user-name'), 'locked_out_user')
+WebUI.setText(findTestObject('Object Repository/FooterImage/Page_Swag Labs/input_user-name'), 'standard_user')
 
-WebUI.click(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/form'))
+WebUI.setEncryptedText(findTestObject('Object Repository/FooterImage/Page_Swag Labs/input_password'), 'qcu24s4901FyWDTwXGr6XA==')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/input_password'), 'p4y+y39Ir5MSxNs1t5lTZQ==')
+WebUI.click(findTestObject('Object Repository/FooterImage/Page_Swag Labs/inputlogin-button'))
 
-WebUI.click(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/inputlogin-button'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/FooterImage/Page_Swag Labs/img_footer_robot'), 0)
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/h3_Epic sadface Username and password do no_0e8909'), 
-    0)
+WebUI.verifyElementText(findTestObject('Object Repository/FooterImage/Page_Swag Labs/div_2020 Sauce Labs. All Rights Reserved. T_5b767f'), 
+    '© 2020 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy')
 
-WebUI.verifyElementText(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/h3_Epic sadface Username and password do no_0e8909'), 
-    'Epic sadface: Username and password do not match any user in this service')
+WebUI.rightClick(findTestObject('Object Repository/FooterImage/Page_Swag Labs/li_Twitter'))
+
+WebUI.click(findTestObject('Object Repository/FooterImage/Page_Swag Labs/div_Sauce Labs OnesieRib snap infant onesie_8fcfdc'))
 
 WebUI.closeBrowser()
 

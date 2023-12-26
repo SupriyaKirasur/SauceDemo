@@ -17,23 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('https://www.saucedemo.com/v1/')
-
-WebUI.setText(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/input_user-name'), 'locked_out_user')
-
-WebUI.click(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/form'))
-
-WebUI.setEncryptedText(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/input_password'), 'p4y+y39Ir5MSxNs1t5lTZQ==')
-
-WebUI.click(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/inputlogin-button'))
-
-WebUI.waitForElementVisible(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/h3_Epic sadface Username and password do no_0e8909'), 
+WebUI.verifyElementPresent(findTestObject('Object Repository/ProductSorting/Page_Swag Labs/select_Name (A to Z)Name (Z to A)Price (low_f7e90a'), 
     0)
 
-WebUI.verifyElementText(findTestObject('Object Repository/LoginInvalidCredentials/Page_Swag Labs/h3_Epic sadface Username and password do no_0e8909'), 
-    'Epic sadface: Username and password do not match any user in this service')
+WebUI.selectOptionByValue(findTestObject('Object Repository/ProductSorting/Page_Swag Labs/select_Name (A to Z)Name (Z to A)Price (low_f7e90a'), 
+    'za', true)
+
+WebUI.verifyElementText(findTestObject('Object Repository/ProductSorting/Page_Swag Labs/div_Test.allTheThings() T-Shirt (Red)'), 
+    'Test.allTheThings() T-Shirt (Red)')
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/ProductSorting/Page_Swag Labs/select_Name (A to Z)Name (Z to A)Price (low_f7e90a'), 
+    'az', true)
+
+WebUI.verifyElementText(findTestObject('Object Repository/ProductSorting/Page_Swag Labs/div_Sauce Labs Backpack'), 'Sauce Labs Backpack')
 
 WebUI.closeBrowser()
 
